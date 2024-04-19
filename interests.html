@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="nav_styles.css">
+        <link rel="stylesheet" href="para_styles.css">
+        <script src="./JScripts/img-border.js"></script>
+    </head>
+    <body style="margin-bottom: 200px;">
+        <h2 class="template-text-1">Just a few things I like to spend time on</h2>
+        <div class="snippet">
+            <div width="100% " style="padding-inline: 2%;">
+                <h2 class="template-text-1">
+                   
+                </h3>
+                <hr width="100%">
+                <p class="template-text-1" style="margin-left: 40px; font-size: 20px;">
+                    I've been an avid gamer since my 9th grade, exploring various gaming titles and immersing myself in virtual worlds. Alongside my passion for gaming, I'm deeply invested in the field of machine learning and deep learning.
+                    <br> 
+                    Some of my professional interests include:
+                </p>
+                <ul class="template-text-1" style="margin-left: 40px; font-size: 20px;">
+                    <li>Exploring machine learning datasets from platforms like Kaggle</li>
+                    <li>Developing deep learning models using frameworks like Keras</li>
+                    <li>Implementing artificial neural networks (ANN) and experimenting with different neural network architectures</li>
+                </ul>
+                <p class="template-text-1" style="margin-left: 80px; font-size: 15px;">[ and much more ... ]</p>
+                <p class="template-text-1" style="margin-left: 40px; font-size: 20px;">I'm excited about the endless possibilities of leveraging machine learning and deep learning techniques to solve real-world problems and drive innovation in the tech industry.</p>
+            </div>
+            <div style="width: 100%; margin-top: 76px; min-height: 300px; max-height: 300px;" class="img-shelf-horizon"  >
+                <div class="img-shelf-item-horizon"><img src="./Pictures/interest/Day 1.jpg" height="100%"></div>
+                <div class="img-shelf-item-horizon"><img src="./Pictures/interest/Day 7.jpg" height="100%"></div>
+                <div class="img-shelf-item-horizon"><img src="./Pictures/interest/Day 23.jpg" height="100%"></div>
+                <div class="img-shelf-item-horizon"><img src="./Pictures/interest/Day 33.jpg" height="100%"></div>
+                <div class="img-shelf-item-horizon"><img src="./Pictures/interest/Day 43.jpg" height="100%"></div>
+                <div class="img-shelf-item-horizon"><img src="./Pictures/interest/Day 54.jpg" height="100%"></div>
+                <div class="img-shelf-item-horizon"><img src="./Pictures/interest/Day 4.jpg" height="100%"></div>
+            </div>
+        </div>  
+
+
+        <div class="snippet">
+            <div width="100% " style="padding-inline: 2%;">
+                <h2 class="template-text-1">
+                   Playing Games🎮🎮
+                </h3>
+                <hr width="100%">
+                <p class="template-text-1" style="margin-left: 40px; font-size: 20px;">
+                    Im not going to pretend that i have played all the games or all the must play ones, but 
+                    I can say that I'm an avid games fan since my 9th grade.
+                    <br> 
+                    some of my favorites are 
+                    
+                </p>
+                <ul class="template-text-1" style="margin-left: 40px; font-size: 20px;">
+                    <li>
+                        Assassin's Creed Franchise</li>
+                    <li>Call Of Duty MW</li>
+                    <li>GTA <strong>V</strong></li>
+                    <li>Red Dead Redemption 2</li>
+                    <li>Rainbow Six Sidge</li>
+                    <li>Marvel Spider Man</li>
+                    <li>Valorant</li>
+                </ul>
+                <p class="template-text-1" style="margin-left: 80px; font-size: 15px; "">[ and many more ... ]</p>
+            </div>
+            <div style="width: 100%; margin-top: 76px; min-height: 300px; max-height: 300px;" class="img-shelf-horizon"  >
+                <div class="img-shelf-item-horizon"><img src="./Pictures/opp/cod.jpg" height="100%"></div>
+                <div class="img-shelf-item-horizon"><img src="./Pictures/opp/gtav.jpg" height="100%"></div>
+                <div class="img-shelf-item-horizon"><img src="./Pictures/opp/msm.jpg" height="100%"></div>
+                <div class="img-shelf-item-horizon"><img src="./Pictures/opp/rdr.jpg" height="100%"></div>
+                <div class="img-shelf-item-horizon"><img src="./Pictures/opp/r6s-operator-montagne-elite.webp" height="100%"></div>
+                <div class="img-shelf-item-horizon"><img src="./Pictures/opp/ac.jpg" height="100%"></div>
+                <div class="img-shelf-item-horizon"><img src="./Pictures/opp/reyna_render_by_lynwulf_dee22qq-fullview.png" height="100%"></div>
+            </div>
+        </div>  
+
+        <script>
+            window.onload = function () {
+                let image_shelves = document.querySelectorAll('.img-shelf-horizon');
+                image_shelves.forEach ( function (image_shelf) {
+                    if (image_shelf.getAttribute('data-img-view') == "full") {
+
+                        image_shelf_items = image_shelf.childNodes;
+
+                        image_shelf_items.forEach( function(image_container) {
+                            let image = image_container.firstElementChild;                        
+                            if (image) {
+                                image_container.style.minWidth = image.width + 'px';
+                            }
+                        })
+                    }
+                    
+                })
+                
+                
+            }
+        </script>
+        
+    </body>
+</html>
